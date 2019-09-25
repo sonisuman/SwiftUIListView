@@ -11,12 +11,17 @@ import SwiftUI
 
 struct HikeDetails: View {
   let hike : Hike
+  @State var zoomed = false
   var body:  some View {
     return
       VStack {
         Image(hike.imageURL)
-        .resizable()
-          .aspectRatio(contentMode: .fit)
+          .resizable()
+          .aspectRatio(contentMode: self.zoomed ? .fill : .fit)
+          .onTapGesture {
+            self.zoomed.toggle()
+        }
+        .animation(.linear(duration: 2))
         Text(hike.name)
           .font(.largeTitle)
       }.navigationBarTitle(Text(hike.name),displayMode: .inline)
