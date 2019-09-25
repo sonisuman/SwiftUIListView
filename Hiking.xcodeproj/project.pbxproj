@@ -15,6 +15,10 @@
 		E439FE49230E628C00C45B39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E439FE47230E628C00C45B39 /* LaunchScreen.storyboard */; };
 		E439FE54230E628C00C45B39 /* HikingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E439FE53230E628C00C45B39 /* HikingTests.swift */; };
 		E439FE5F230E628C00C45B39 /* HikingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E439FE5E230E628C00C45B39 /* HikingUITests.swift */; };
+		E439FE6E230E673000C45B39 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = E439FE6D230E673000C45B39 /* Hike.swift */; };
+		E49B2ECA2338C92F0050B184 /* twopic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E49B2EC92338C92E0050B184 /* twopic.jpg */; };
+		E49B2ECC2338C93E0050B184 /* thirdpic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E49B2ECB2338C93D0050B184 /* thirdpic.jpg */; };
+		E49B2ECE2338C9460050B184 /* onepic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E49B2ECD2338C9460050B184 /* onepic.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		E439FE5A230E628C00C45B39 /* HikingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E439FE5E230E628C00C45B39 /* HikingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingUITests.swift; sourceTree = "<group>"; };
 		E439FE60230E628C00C45B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E439FE6D230E673000C45B39 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
+		E49B2EC92338C92E0050B184 /* twopic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twopic.jpg; sourceTree = "<group>"; };
+		E49B2ECB2338C93D0050B184 /* thirdpic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thirdpic.jpg; sourceTree = "<group>"; };
+		E49B2ECD2338C9460050B184 /* onepic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = onepic.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,13 @@
 		E439FE3B230E628900C45B39 /* Hiking */ = {
 			isa = PBXGroup;
 			children = (
+				E439FE6C230E670E00C45B39 /* Models */,
 				E439FE3C230E628900C45B39 /* AppDelegate.swift */,
 				E439FE3E230E628900C45B39 /* SceneDelegate.swift */,
 				E439FE40230E628900C45B39 /* ContentView.swift */,
+				E49B2EC92338C92E0050B184 /* twopic.jpg */,
+				E49B2ECB2338C93D0050B184 /* thirdpic.jpg */,
+				E49B2ECD2338C9460050B184 /* onepic.jpg */,
 				E439FE42230E628C00C45B39 /* Assets.xcassets */,
 				E439FE47230E628C00C45B39 /* LaunchScreen.storyboard */,
 				E439FE4A230E628C00C45B39 /* Info.plist */,
@@ -134,6 +146,14 @@
 				E439FE60230E628C00C45B39 /* Info.plist */,
 			);
 			path = HikingUITests;
+			sourceTree = "<group>";
+		};
+		E439FE6C230E670E00C45B39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E439FE6D230E673000C45B39 /* Hike.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +262,9 @@
 			files = (
 				E439FE49230E628C00C45B39 /* LaunchScreen.storyboard in Resources */,
 				E439FE46230E628C00C45B39 /* Preview Assets.xcassets in Resources */,
+				E49B2ECC2338C93E0050B184 /* thirdpic.jpg in Resources */,
+				E49B2ECA2338C92F0050B184 /* twopic.jpg in Resources */,
+				E49B2ECE2338C9460050B184 /* onepic.jpg in Resources */,
 				E439FE43230E628C00C45B39 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +292,7 @@
 			files = (
 				E439FE3D230E628900C45B39 /* AppDelegate.swift in Sources */,
 				E439FE3F230E628900C45B39 /* SceneDelegate.swift in Sources */,
+				E439FE6E230E673000C45B39 /* Hike.swift in Sources */,
 				E439FE41230E628900C45B39 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
