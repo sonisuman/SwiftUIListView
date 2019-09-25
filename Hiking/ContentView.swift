@@ -28,7 +28,7 @@ struct ContentView_Previews: PreviewProvider {
 struct HikeCell: View {
   let hike: Hike
   var body: some View {
-    return NavigationLink(destination: Text(hike.name)) {
+    return NavigationLink(destination: HikeDetails(hike: hike)) {
        HStack {
           Image(hike.imageURL)
             .resizable()
